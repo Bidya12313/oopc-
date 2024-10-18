@@ -1,10 +1,21 @@
-using System;
-using System.Collections.Generic;
-
 public class GameAccount
 {
     public string UserName { get; set; }
-    public int CurrentRating { get; set; }
+
+    private int _currentRating;  // Приватне поле для рейтингу
+    public int CurrentRating
+    {
+        get { return _currentRating; }
+        set
+        {
+            if (value < 1)  // Перевірка на те, що рейтинг не менший за 1
+            {
+                throw new ArgumentException("Рейтинг не може бути меншим за 1.");
+            }
+            _currentRating = value;
+        }
+    }
+
     public int GamesCount { get; set; }
     private List<Game> gameHistory;
 
@@ -27,7 +38,7 @@ public class GameAccount
         {
             throw new ArgumentException("Рейтинг на який грають не може бути від'ємним.");
         }
-        
+
         CurrentRating += rating;
         GamesCount++;
         gameHistory.Add(new Game(opponentName, rating, true));
@@ -43,7 +54,7 @@ public class GameAccount
         CurrentRating -= rating;
         if (CurrentRating < 1)
         {
-            CurrentRating = 1;
+            CurrentRating = 1;  // Якщо рейтинг стає меншим за 1, повертаємо його до 1
         }
 
         GamesCount++;
