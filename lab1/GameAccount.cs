@@ -10,13 +10,14 @@ public class GameAccount
         {
             if (value < 1)  // Перевірка на те, що рейтинг не менший за 1
             {
-                throw new ArgumentException("Рейтинг не може бути меншим за 1.");
+                _currentRating = 1;
             }
-            _currentRating = value;
+            else
+                _currentRating = value;
         }
     }
 
-    public int GamesCount { get; set; }
+    public int GamesCount { get{return gameHistory.Count;}}
     private List<Game> gameHistory;
 
     public GameAccount(string userName, int startingRating = 1)
@@ -28,7 +29,6 @@ public class GameAccount
 
         UserName = userName;
         CurrentRating = startingRating;
-        GamesCount = 0;
         gameHistory = new List<Game>();
     }
 
@@ -40,7 +40,6 @@ public class GameAccount
         }
 
         CurrentRating += rating;
-        GamesCount++;
         gameHistory.Add(new Game(opponentName, rating, true));
     }
 
@@ -52,12 +51,6 @@ public class GameAccount
         }
 
         CurrentRating -= rating;
-        if (CurrentRating < 1)
-        {
-            CurrentRating = 1;  // Якщо рейтинг стає меншим за 1, повертаємо його до 1
-        }
-
-        GamesCount++;
         gameHistory.Add(new Game(opponentName, rating, false));
     }
 
