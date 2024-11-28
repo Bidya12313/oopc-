@@ -1,0 +1,14 @@
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\lab3.AssemblyInfoInputs.cache
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\lab3.AssemblyInfo.cs
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\lab3.csproj.CoreCompileInputs.cache
+D:\kpi_prog\oop\lab3\bin\Debug\net7.0\lab3.exe
+D:\kpi_prog\oop\lab3\bin\Debug\net7.0\lab3.deps.json
+D:\kpi_prog\oop\lab3\bin\Debug\net7.0\lab3.runtimeconfig.json
+D:\kpi_prog\oop\lab3\bin\Debug\net7.0\lab3.dll
+D:\kpi_prog\oop\lab3\bin\Debug\net7.0\lab3.pdb
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\lab3.dll
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\refint\lab3.dll
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\lab3.pdb
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\lab3.genruntimeconfig.cache
+D:\kpi_prog\oop\lab3\obj\Debug\net7.0\ref\lab3.dll
