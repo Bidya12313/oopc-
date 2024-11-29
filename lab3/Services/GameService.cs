@@ -1,16 +1,34 @@
 public class GameService : IGameService
 {
-    private readonly IGameRepository _repository;
+    private readonly IGameRepository _gameRepository;
+    private readonly IPlayerRepository _playerRepository;
 
-    public GameService(IGameRepository repository)
+    public GameService(IGameRepository gameRepository, IPlayerRepository playerRepository)
     {
-        _repository = repository;
+        _gameRepository = gameRepository;
+        _playerRepository = playerRepository;
     }
 
-    public void RecordGame(Game game) => _repository.AddGame(game);
+    public void RecordGame(Game game)
+    {
+        // Додаємо гру до репозиторію ігор
+        _gameRepository.AddGame(game);
 
-    public List<Game> GetAllGames() => _repository.GetAllGames();
+        // Оновлюємо статистику гравця
+        var player = _playerRepository.GetPlayerByName(game.OpponentName);
+        if (player == null)
+            throw new Exception($"Гравець {game.OpponentName} не знайдений.");
+
+        if (game.IsWin)
+            player.WinGame(game);
+        else
+            player.LoseGame(game);
+
+        _playerRepository.UpdatePlayer(player);
+    }
+
+    public List<Game> GetAllGames() => _gameRepository.GetAllGames();
 
     public List<Game> GetGamesByPlayer(string userName) =>
-        _repository.GetGamesByPlayer(userName);
+        _gameRepository.GetGamesByPlayer(userName);
 }

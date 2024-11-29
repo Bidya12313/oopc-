@@ -14,10 +14,6 @@ public class DbContext
             new SafeAccount("Player3", 10)
         };
 
-        Games = new List<Game>()
-        {
-            new StandardGame("Player1", 100, true),
-            new TrainingGame("Player2")
-        };
-    }
+        Games = new List<Game>();
+    } 
 }
