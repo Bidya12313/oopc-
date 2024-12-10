@@ -1,0 +1,14 @@
+D:\kpi_prog\oop\lab4\bin\Debug\net7.0\lab4.exe
+D:\kpi_prog\oop\lab4\bin\Debug\net7.0\lab4.deps.json
+D:\kpi_prog\oop\lab4\bin\Debug\net7.0\lab4.runtimeconfig.json
+D:\kpi_prog\oop\lab4\bin\Debug\net7.0\lab4.dll
+D:\kpi_prog\oop\lab4\bin\Debug\net7.0\lab4.pdb
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\lab4.GeneratedMSBuildEditorConfig.editorconfig
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\lab4.AssemblyInfoInputs.cache
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\lab4.AssemblyInfo.cs
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\lab4.csproj.CoreCompileInputs.cache
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\lab4.dll
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\refint\lab4.dll
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\lab4.pdb
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\lab4.genruntimeconfig.cache
+D:\kpi_prog\oop\lab4\obj\Debug\net7.0\ref\lab4.dll
