@@ -1,0 +1,14 @@
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\kursova.GeneratedMSBuildEditorConfig.editorconfig
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\kursova.AssemblyInfoInputs.cache
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\kursova.AssemblyInfo.cs
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\kursova.csproj.CoreCompileInputs.cache
+D:\kpi_prog\oop\kursova\bin\Debug\net7.0\kursova.exe
+D:\kpi_prog\oop\kursova\bin\Debug\net7.0\kursova.deps.json
+D:\kpi_prog\oop\kursova\bin\Debug\net7.0\kursova.runtimeconfig.json
+D:\kpi_prog\oop\kursova\bin\Debug\net7.0\kursova.dll
+D:\kpi_prog\oop\kursova\bin\Debug\net7.0\kursova.pdb
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\kursova.dll
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\refint\kursova.dll
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\kursova.pdb
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\kursova.genruntimeconfig.cache
+D:\kpi_prog\oop\kursova\obj\Debug\net7.0\ref\kursova.dll
