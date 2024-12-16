@@ -7,6 +7,13 @@ public class UserRepository : IUserRepository
         _context = context;
     }
 
+    public UserAccount GetUserByUsernameAndPassword(string username, string password)
+    {
+    return _context.Users
+        .FirstOrDefault(u => u.UserName == username && u.Password == password);
+    }
+
+
     public void AddUser(UserAccount user)
     {
         _context.Users.Add(user);
@@ -27,6 +34,6 @@ public class UserRepository : IUserRepository
     }
     public List<UserAccount> GetAllUsers()
     {
-        return _context.Users.ToList(); // Повертає всіх користувачів з бази даних
+        return _context.Users.ToList();
     }
 }

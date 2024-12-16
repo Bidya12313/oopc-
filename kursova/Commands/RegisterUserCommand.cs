@@ -15,7 +15,10 @@ public class RegisterUserCommand : ICommand
         Console.Write("Введіть початковий баланс: ");
         int balance = int.Parse(Console.ReadLine());
 
-        UserAccount user = new UserAccount(userName, balance);
+        Console.Write("Введіть пароль: ");
+        string password = Console.ReadLine();
+
+        UserAccount user = new UserAccount(userName, balance, password);
         _userService.CreateUser(user);
         Console.WriteLine($"Користувач {userName} зареєстрований.");
     }

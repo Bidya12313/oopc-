@@ -9,6 +9,11 @@ public class UserService : IUserService
         _productRepository = productRepository;
     }
 
+    public UserAccount Authenticate(string username, string password)
+    {
+        return _userRepository.GetUserByUsernameAndPassword(username, password);
+    }
+
     public void CreateUser(UserAccount user)
     {
         _userRepository.AddUser(user);
@@ -39,7 +44,7 @@ public class UserService : IUserService
         if (product == null)
             throw new Exception("Товар не знайдено.");
 
-        user.MakePurchase(product, quantity);
+        user.MakePurchase(product, quantity, userName);
 
         _userRepository.UpdateUser(user);
         _productRepository.UpdateProduct(product);

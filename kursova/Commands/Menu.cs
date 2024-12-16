@@ -16,7 +16,7 @@ public class Menu
             Console.WriteLine($"{command.Key}. {GetCommandDescription(command.Value)}");
         }
 
-        Console.WriteLine("6. Вихід");
+        Console.WriteLine("8. Вихід");
     }
 
     private string GetCommandDescription(ICommand command)
@@ -25,6 +25,10 @@ public class Menu
         {
             return "Відобразити товари";
         }
+        if (command is LoginCommand)
+        {
+            return "Логін";
+        }
         else if (command is RegisterUserCommand)
         {
             return "Зареєструвати користувача";
@@ -32,6 +36,10 @@ public class Menu
         else if (command is AddBalanceCommand)
         {
             return "Поповнити баланс";
+        }
+        else if (command is ViewPurchaseHistoryCommand)
+        {
+            return "Переглянути історію покупок";
         }
         else if (command is MakePurchaseCommand)
         {

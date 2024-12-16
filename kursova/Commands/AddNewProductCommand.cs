@@ -9,8 +9,13 @@ public class AddProductCommand : ICommand
 
     public void Execute()
     {
-        Console.Write("Введіть ім'я користувача: ");
-        string userName = Console.ReadLine();
+        if (Program.loggedInUser == null)
+        {
+            Console.WriteLine("Будь ласка, увійдіть в систему для покупки.");
+            return;
+        }
+
+        string userName = Program.loggedInUser.UserName;
 
         Console.Write("Введіть назву продукту: ");
         string name = Console.ReadLine();

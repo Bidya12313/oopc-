@@ -10,9 +10,9 @@ public class DbContext
     {
         Users = new List<UserAccount>
         {
-            new UserAccount("User1", 100),
-            new UserAccount("User2", 200),
-            new UserAccount("User3", 300)
+            new UserAccount("User1", 100, "password1"),
+            new UserAccount("User2", 200, "password2"),
+            new UserAccount("User3", 300, "password3")
         };
 
         Products = new List<Product>

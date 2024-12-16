@@ -4,4 +4,5 @@ public interface IUserService
     UserAccount GetUser(string userName);
     void AddBalance(string userName, int amount);
     void MakePurchase(string userName, string productName, int quantity);
+    UserAccount Authenticate(string username, string password);
 }

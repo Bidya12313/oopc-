@@ -9,9 +9,14 @@ public class AddBalanceCommand : ICommand
 
     public void Execute()
     {
-        Console.Write("Введіть ім'я користувача: ");
-        string userName = Console.ReadLine();
+        if (Program.loggedInUser == null)
+        {
+            Console.WriteLine("Будь ласка, увійдіть в систему для покупки.");
+            return;
+        }
 
+        string userName = Program.loggedInUser.UserName;
+        
         Console.Write("Введіть суму для поповнення: ");
         int amount = int.Parse(Console.ReadLine());
 
